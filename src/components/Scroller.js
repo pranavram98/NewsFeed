@@ -8,7 +8,7 @@ const Scroller=({scrolls})=>{
             <NewsTicker
                         tickerBorderColor="#000000"
                         title={"Top Headlines"}
-                        titleBackground={"linear-gradient(147deg, #000000 0%, #04619f 74%)"}
+                        titleBackground={"linear-gradient(147deg, #000000 0%, #434343 74%)"}
                         newsList={[
                             {
                                 text: scroll.title,
