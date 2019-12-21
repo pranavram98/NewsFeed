@@ -1,14 +1,27 @@
 import React from 'react';
+import {NewsTicker} from "react-announcement-ticker";
 
 const Scroller=({scrolls})=>{
     const list=scrolls.map((scroll=>{
-        return(<div className="ui relaxed horizontal list"><div className="item"><div class="content">{scroll.title} |</div></div></div>     
+        return(
+        <div>
+            <NewsTicker
+                        tickerBorderColor="#000000"
+                        title={"Top Headlines"}
+                        titleBackground={"linear-gradient(315deg, #000000 0%, #7f8c8d 74%)"}
+                        newsList={[
+                            {
+                                text: scroll.title,
+                                link: scroll.url
+                            }
+                        ]}
+                         />
+                         </div>
     );
     }));
-return (<div className="ui container">
-        <div className="ui segment">
-            <div ><h4>{list}</h4>
-            </div></div></div>
+return (
+                    <div>{list}
+                    </div>
 );
 };
 export default Scroller;
