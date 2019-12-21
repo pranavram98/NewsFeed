@@ -21,7 +21,7 @@ return(
                 </input>
             </div>
     <div className="ui pointing label">
-      Please enter a value
+      Search For News
     </div>
     </form>
 </div>
