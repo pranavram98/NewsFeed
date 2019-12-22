@@ -26,3 +26,7 @@
     font-size: 75px;
     font-family: American Typewriter, serif;
 }
+#news{
+    text-align:center;
+    cursor: pointer;
+}

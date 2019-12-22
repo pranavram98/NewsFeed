@@ -1,5 +1,6 @@
 import React from 'react';
 import Newsticker from 'react-newsticker';
+import './Segment.css';
 
 const Scroller=({scrolls})=>{
     const list=scrolls.map((scroll=>{
@@ -9,7 +10,7 @@ const Scroller=({scrolls})=>{
     );
     }));
 return (
-                    <div><Newsticker news={list}/>
+                    <div id="news"><Newsticker  news={list}/>
                     </div>
 );
 };
