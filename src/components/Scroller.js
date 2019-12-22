@@ -1,26 +1,15 @@
 import React from 'react';
-import {NewsTicker} from "react-announcement-ticker";
+import Newsticker from 'react-newsticker';
 
 const Scroller=({scrolls})=>{
     const list=scrolls.map((scroll=>{
         return(
-        <div>
-            <NewsTicker
-                        tickerBorderColor="#000000"
-                        title={"Top Headlines"}
-                        titleBackground={"linear-gradient(147deg, #000000 0%, #434343 74%)"}
-                        newsList={[
-                            {
-                                text: scroll.title,
-                                link: scroll.url
-                            }
-                        ]}
-                         />
+        <div>{scroll.title}
                          </div>
     );
     }));
 return (
-                    <div>{list}
+                    <div><Newsticker news={list}/>
                     </div>
 );
 };
