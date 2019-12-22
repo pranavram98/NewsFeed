@@ -6,6 +6,7 @@ import news, { baseParams } from '../api/news';
 import ArticleList from './ArticleList';
 import axios from 'axios';
 import Scroller from './Scroller';
+import ArticleDetail from './ArticleDetail';
 const key="456d74d5713b496bb02096f331654d08";
 
 
@@ -18,20 +19,19 @@ class App extends React.Component{
           params:{
               ...baseParams,
               qinTitle: term,
-              pageSize:10
+              pageSize:6
           }
                });
                this.setState({articles:x.data.articles});
+               this.setState({selectedArticle:x.data.articles[0]});
                console.log(this.state.articles);
             };
 componentDidMount() { /* using this for getting top headlines to scroll on the page*/ 
     axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${key}`).then(response=>{
-    this.setState({scrolls:response.data.articles})
-    console.log(this.state.scrolls);
-        
+    this.setState({scrolls:response.data.articles});
+    this.onTermSubmit('Modi');
           });
 }
-
             selectedArticle=(article)=>{
                 this.setState({selectedArticle:article});
             };
@@ -64,8 +64,15 @@ componentDidMount() { /* using this for getting top headlines to scroll on the p
   </div>
   </div>
   <div><Scroller scrolls={this.state.scrolls}/></div>
+  <br/>
+  <div className="ui grid">
+            <div className="ui row">
+            <div className="eleven wide column">
+                <div><ArticleDetail article={this.state.selectedArticle}/></div></div>
+<div className="five wide column">
   <div><ArticleList selectedArticle={this.selectedArticle} articles={this.state.articles}/></div>
-  </div>    
+  </div></div></div>
+  </div>      
  
         );
     };
