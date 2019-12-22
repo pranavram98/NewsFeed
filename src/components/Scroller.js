@@ -10,7 +10,7 @@ const Scroller=({scrolls})=>{
     );
     }));
 return (
-                    <div id="news"><Newsticker  news={list}/>
+                    <div id="news"><Newsticker news={list}/>
                     </div>
 );
 };
