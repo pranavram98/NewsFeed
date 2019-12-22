@@ -35,6 +35,10 @@ componentDidMount() { /* using this for getting top headlines to scroll on the p
             selectedArticle=(article)=>{
                 this.setState({selectedArticle:article});
             };
+
+            refreshPage(){ 
+                window.location.reload(); 
+            };
     render(){
         return(
 <div>  
@@ -43,7 +47,7 @@ componentDidMount() { /* using this for getting top headlines to scroll on the p
             <div className="ui row">
 
             <div className="three wide column">
-                    <h1 className="ui header" id="heading">NEWS</h1>
+                    <h1 className="ui header" id="heading" onClick={this.refreshPage}>NEWS</h1>
                     </div>
 
                     <div className="ten wide column">
