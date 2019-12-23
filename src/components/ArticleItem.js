@@ -6,8 +6,8 @@ return(
 <img className="ui avatar image" src={article.urlToImage} alt=""/>
 <br></br><br></br>
 <div className="content">
-<a class="header">{article.author}</a>
-<div class="description">{article.title}</div>
+<a className="header">{article.author}</a>
+<div className="description">{article.title}</div>
 </div>
 </div>
 );

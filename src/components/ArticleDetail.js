@@ -15,7 +15,7 @@ return(
 <h2 className="ui header" id="article">{article.title}</h2>
 <h3 className="ui header" id="article">{article.description}</h3>
 <h5 className="ui header" id="author">- {article.author}</h5>
-<div class="ui divider"></div>
+<div className="ui divider"></div>
 
 <img className="ui large image" src={article.urlToImage} alt="" id="detailimg"/><br/>
 <p id="article">{article.content}</p>
