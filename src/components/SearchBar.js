@@ -15,7 +15,7 @@ onFormSubmit=(event)=>{
     render(){
 return(
     <div>
-        <form className="ui fluid form" onSubmit={this.onFormSubmit} netlify>
+        <form className="ui fluid form" onSubmit={this.onFormSubmit} method="POST" data-netlify="true">
             <div className="field">
                 <input type="text" placeholder="Search here.." id="search" onChange={this.onFormChange}>
                 </input>
