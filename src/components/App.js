@@ -41,7 +41,7 @@ componentDidMount() { /* using this for getting top headlines to scroll on the p
             };
     render(){
         return(
-<div>  
+<div id="boss">  
 <div className="ui inverted segment">
         <div className="ui grid">
             <div className="ui row">

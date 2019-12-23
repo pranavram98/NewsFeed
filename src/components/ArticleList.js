@@ -15,7 +15,7 @@ const ArticleList=(props)=>{
     );
     }));
 
-    return <div><div class="ui segment">
+    return <div><div class="ui inverted segment">
     <div class="ui medium vertical divided list" id="list">{list}</div></div></div>
     
 };

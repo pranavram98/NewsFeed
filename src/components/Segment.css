@@ -36,10 +36,19 @@
 #author{
     text-align:right;
     margin-right: 100px;
+    color:white;
 }
 #list{
     cursor: pointer;
 }
 #article{
    margin-left:20px;
+   color:white;
 }
+#boss{
+    background-color: black;
+ }
+
+ #detailimg{
+    margin-left:20px;
+ }
