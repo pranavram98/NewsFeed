@@ -27,7 +27,7 @@ class App extends React.Component{
                console.log(this.state.articles);
             };
 componentDidMount() { /* using this for getting top headlines to scroll on the page*/ 
-    axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${key}`).then(response=>{
+    axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${key}`,{params:{pageSize:6}}).then(response=>{
     this.setState({scrolls:response.data.articles});
     this.setState({articles:response.data.articles});
     this.setState({selectedArticle:response.data.articles[0]});
