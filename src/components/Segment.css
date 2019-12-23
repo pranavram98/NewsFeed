@@ -45,6 +45,11 @@
    margin-left:20px;
    color:white;
 }
+#articletitle{
+    margin-left:20px;
+    color:white;
+    cursor: pointer;
+ }
 #boss{
     background-color: black;
  }

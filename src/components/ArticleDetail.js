@@ -11,8 +11,8 @@ const ArticleDetail=({article})=>{
 );
     }
 return(
-    <div>
-<h2 className="ui header" id="article">{article.title}</h2>
+<div>
+<h2 className="ui header" id="articletitle" >{article.title}</h2>
 <h3 className="ui header" id="article">{article.description}</h3>
 <h5 className="ui header" id="author">- {article.author}</h5>
 <div className="ui divider"></div>
