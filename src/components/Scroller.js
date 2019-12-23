@@ -1,5 +1,5 @@
 import React from 'react';
-import Newsticker from 'react-newsticker';
+import Newsticker from './NewsTicker';
 import './Segment.css';
 
 const Scroller=({scrolls})=>{
