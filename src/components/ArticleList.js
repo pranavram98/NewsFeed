@@ -1,5 +1,8 @@
 import React from 'react';
 import ArticleItem from './ArticleItem';
+import { connect } from 'react-redux';
+import {fetchArticle} from '../actions'
+
 import shortid from 'shortid';
 import './Segment.css';
 
@@ -19,4 +22,4 @@ const ArticleList=(props)=>{
     <div className="ui medium vertical divided list" id="list">{list}</div></div></div>
     
 };
-export default ArticleList;
+export default connect(null,{fetchArticle})(ArticleList)
