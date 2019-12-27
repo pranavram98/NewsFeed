@@ -7,6 +7,7 @@ import ArticleList from './ArticleList';
 import axios from 'axios';
 import Scroller from './Scroller';
 import ArticleDetail from './ArticleDetail';
+import ArticleListClass from './ArticleListClass'
 const key="456d74d5713b496bb02096f331654d08";
 
 
@@ -70,7 +71,7 @@ componentDidMount() { /* using this for getting top headlines to scroll on the p
             <div className="eleven wide column">
                 <div><ArticleDetail article={this.state.selectedArticle}/></div></div>
 <div className="five wide column">
-  <div><ArticleList selectedArticle={this.selectedArticle} articles={this.state.articles}/></div>
+  <div><ArticleListClass selectedArticle={this.selectedArticle} articles={this.state.articles}/></div>
   </div></div></div>
   </div>      
  
