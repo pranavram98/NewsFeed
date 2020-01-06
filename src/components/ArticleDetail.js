@@ -13,7 +13,12 @@ const ArticleDetail=({article})=>{
         return(
             <div><div className="ui inverted segment">
             <h2 className="ui header" id="articletitle">{article.title}</h2>
+            <button className="ui labeled icon button" id="fullscreen">
+                <i class="expand icon"></i>
+                Open in Full Screen
+            </button>
             <h3 className="ui header" id="article">{article.description}</h3>
+         
             <br/>
             <div className="ui grid"><div className="ui row">
             <div className="eleven wide column"><h5 className="ui header" id="date">{article.publishedAt}</h5></div>
@@ -31,6 +36,10 @@ return(
 <div>  
 <div className="ui inverted segment">
 <h2 className="ui header" id="articletitle">{article.title}</h2>
+<button className="ui labeled icon button" id="fullscreen">
+                <i class="expand icon"></i>
+                Open in Full Screen
+            </button>
 <h3 className="ui header" id="article">{article.description}</h3>
 <br/>
 <div className="ui grid"><div className="ui row">
