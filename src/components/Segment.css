@@ -54,7 +54,6 @@
 #articletitle{
     margin-left:20px;
     color:white;
-    cursor: pointer;
  }
 #boss{
     background-color: black;
@@ -62,4 +61,7 @@
 
  #detailimg{
     margin-left:20px;
+ }
+ #fullscreen{
+    float:right;
  }

@@ -7,9 +7,8 @@ import ArticleList from './ArticleList';
 import axios from 'axios';
 import Scroller from './Scroller';
 import ArticleDetail from './ArticleDetail';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 const key="456d74d5713b496bb02096f331654d08";
-
-
 
 class App extends React.Component{
     state={articles:[],selectedArticle:null,scrolls:[]}
